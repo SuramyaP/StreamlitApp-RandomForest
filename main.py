@@ -33,12 +33,13 @@ def get_data(filename):
 
 
 with header:
-	st.title('Welcome my friend')
-	st.text('In this project I look into x y and z as they are very good')
+	st.title('Welcome to this Project')
+	st.text('In this project, I look into the Solar Prediction dataset')
+
 
 with dataset:
-	st.header('NYC Taxi Dataset')
-	st.text('In this project I want to look at x y and z as they are very good people')
+	st.header('Solar Prediction Dataset')
+	st.text('This dataset was taken from https://www.kaggle.com/datasets/dronio/SolarEnergy')
 
 	taxi_data = get_data('data/SolarPrediction.csv')
 	st.write(taxi_data.head(20))
@@ -49,13 +50,11 @@ with dataset:
 	st.bar_chart(Tempr_dist)
 
 
-
-
 with features:
 	st.header('Features I created')
 
-	st.markdown('* **First feature:** I created because of this... I calculated it using this: ')
-	st.markdown('* **Second feature:** I created because of this... I calculated it using this: ')
+	st.markdown('* **First Feature** None ')
+	st.markdown('* **Second feature:** None')
 
 
 
